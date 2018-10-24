@@ -1,4 +1,5 @@
 .erxes-launcher {
+  animation: pop .2s cubic-bezier(.25, .46, .45, .94) 1;
   background-color: $main-color;
   background-image: url($widget-logo);
   background-position: center;

@@ -11,14 +11,12 @@
   color: $main-color;
   cursor: pointer;
   height: 56px;
-  left: auto;
   line-height: 56px;
   pointer-events: auto;
   position: fixed !important;
   right: 8px;
   text-align: center;
-  top: auto;
-  transition: box-shadow .3s ease-in-out, background-image .3s ease-in;
+  transition: box-shadow .3s ease-in-out, background .3s ease-in;
   width: 56px;
   z-index: $z-index-above - 1;
 
@@ -42,7 +40,7 @@
     background-image: url($close) !important;
     background-position: 50%;
     background-size: inherit;
-    transition: box-shadow .3s ease-in-out, background-image .3s ease-in;
+    transition: box-shadow .3s ease-in-out, background .3s ease-in;
 
     &::before {
       animation: none;
@@ -54,14 +52,14 @@
   }
 
   &::before {
-    @include animation(.5s, 2s, animationPulse, linear, 10);
+    @include animation(.4s, 2s, animationPulse, linear, 10);
     border-radius: 50%;
     color: inherit;
     content: '';
-    height: 56px;
-    left: 8px;
-    position: fixed;
-    top: 8px;
-    width: 56px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
